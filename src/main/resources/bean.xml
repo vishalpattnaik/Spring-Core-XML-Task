@@ -8,34 +8,37 @@
 
     <bean id = "actor1" class =  "com.stackroute.domain.Actor">
 
-        <property name="name" value="Vishal Pattnaik" />
+        <constructor-arg value="Vishal Pattnaik" />
 
-        <property name="gender" value="male" />
+        <constructor-arg value="male" />
 
-        <property name="age" value="22" />
+        <constructor-arg value="22" />
 
     </bean>
 
     <bean id = "actor2" class =  "com.stackroute.domain.Actor">
 
-        <property name="name" value="Alia Bhatt" />
+        <constructor-arg value="Alia Bhatt" />
 
-        <property name="gender" value="female" />
+        <constructor-arg value="female" />
 
-        <property name="age" value="24" />
-
-    </bean>
-
-    <bean id = "movie1" class =  "com.stackroute.domain.Movie">
-
-        <property name="actor" ref = "actor1" />
+        <constructor-arg value="24" />
 
     </bean>
 
-    <bean id = "movie2" class =  "com.stackroute.domain.Movie">
+    <bean name = "movie1, movie2" class =  "com.stackroute.domain.Movie" scope = "prototype">
 
-        <property name="actor" ref="actor2" />
+        <constructor-arg ref = "actor1" />
+        <constructor-arg ref="actor2" />
 
     </bean>
+
+<!--    <bean id = "movie2" class =  "com.stackroute.domain.Movie">-->
+
+<!--        <constructor-arg ref="actor2" />-->
+
+<!--    </bean>-->
+
+
 
 </beans>
