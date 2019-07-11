@@ -1,5 +1,6 @@
 package com.stackroute;
 
+import com.stackroute.domain.BeanLifecycleDemoBean;
 import com.stackroute.domain.Movie;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
@@ -41,6 +42,9 @@ public class Main {
         System.out.println("\n\n--------beanA == beanB--------");
         System.out.println(movie11 == movie22);
 
+        BeanLifecycleDemoBean beanLifecycleDemoBean = applicationContext.getBean("beanlifecycledemo", BeanLifecycleDemoBean.class);
+        beanLifecycleDemoBean.afterPropertiesSet();
+        beanLifecycleDemoBean.destroy();
 
 
     }

@@ -45,6 +45,9 @@
 
 <!--    </bean>-->
 
+    <bean id = "beanlifecycledemo" class = "com.stackroute.domain.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy">
+        <property name="message" value="This is Vishal Pattnaik...." />
+    </bean>
 
 
 </beans>
