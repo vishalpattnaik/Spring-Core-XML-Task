@@ -23,15 +23,21 @@
         <constructor-arg value="female" />
 
         <constructor-arg value="24" />
+    </bean>
+
+    <bean id = "movie" scope = "prototype" class = "com.stackroute.domain.Movie" autowire="byName">
+    </bean>
+
+    <bean name = "movie1, movie2" scope = "prototype" class = "com.stackroute.domain.Movie" autowire="constructor">
 
     </bean>
 
-    <bean name = "movie1, movie2" class =  "com.stackroute.domain.Movie" scope = "prototype">
+<!--    <bean name = "movie1, movie2" class =  "com.stackroute.domain.Movie" scope = "prototype">-->
 
-        <constructor-arg ref = "actor1" />
-        <constructor-arg ref="actor2" />
+<!--        <constructor-arg ref = "actor1" />-->
+<!--        <constructor-arg ref="actor2" />-->
 
-    </bean>
+<!--    </bean>-->
 
 <!--    <bean id = "movie2" class =  "com.stackroute.domain.Movie">-->
 

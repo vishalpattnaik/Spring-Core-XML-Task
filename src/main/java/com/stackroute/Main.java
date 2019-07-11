@@ -32,7 +32,7 @@ public class Main {
 //        System.out.println(mov2.getActor());
 
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("bean.xml");
-        Movie movie11 = applicationContext.getBean("movie1", Movie.class);
+        Movie movie11 = applicationContext.getBean("movie", Movie.class);
         System.out.println("\n\n-------Application Context------");
         System.out.println(movie11);
         Movie movie22 = applicationContext.getBean("movie2", Movie.class);

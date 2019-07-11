@@ -4,8 +4,19 @@ public class Movie {
 
     Actor actor, actor1;
 
+    public Movie() {
+    }
+
     public Movie(Actor actor, Actor actor1) {
         this.actor = actor;
+        this.actor1 = actor1;
+    }
+
+    public void setActor(Actor actor) {
+        this.actor = actor;
+    }
+
+    public void setActor1(Actor actor1) {
         this.actor1 = actor1;
     }
 
