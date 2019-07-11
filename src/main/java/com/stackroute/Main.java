@@ -35,7 +35,7 @@ public class Main {
         Movie movie11 = applicationContext.getBean("movie", Movie.class);
         System.out.println("\n\n-------Application Context------");
         System.out.println(movie11);
-        Movie movie22 = applicationContext.getBean("movie2", Movie.class);
+        Movie movie22 = applicationContext.getBean("movie", Movie.class);
         System.out.println(movie22);
 
         System.out.println("\n\n--------beanA == beanB--------");

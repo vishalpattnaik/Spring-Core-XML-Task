@@ -28,9 +28,9 @@
     <bean id = "movie" scope = "prototype" class = "com.stackroute.domain.Movie" autowire="byName">
     </bean>
 
-    <bean name = "movie1, movie2" scope = "prototype" class = "com.stackroute.domain.Movie" autowire="constructor">
+<!--    <bean name = "movie1, movie2" scope = "prototype" class = "com.stackroute.domain.Movie" autowire="constructor">-->
 
-    </bean>
+<!--    </bean>-->
 
 <!--    <bean name = "movie1, movie2" class =  "com.stackroute.domain.Movie" scope = "prototype">-->
 
