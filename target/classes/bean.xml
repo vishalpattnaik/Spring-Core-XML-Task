@@ -49,5 +49,8 @@
         <property name="message" value="This is Vishal Pattnaik...." />
     </bean>
 
+    <bean id = "beanpostprocessordemobean" class = "com.stackroute.domain.BeanPostProcessorDemoBean" >
+
+    </bean>
 
 </beans>
