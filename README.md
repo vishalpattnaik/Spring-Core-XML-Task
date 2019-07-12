@@ -1,4 +1,4 @@
-Spring Fundamentals with XML Configurations
+**Spring Fundamentals with XML Configurations**
 
 Task 1:
 Create a Maven project and add required dependency of spring-context 5.1.4.RELEASE
