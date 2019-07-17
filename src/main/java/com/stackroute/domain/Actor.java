@@ -6,6 +6,8 @@ public class Actor {
     String gender;
     int age;
 
+    //Declare setters
+
     public void setName(String name) {
         this.name = name;
     }

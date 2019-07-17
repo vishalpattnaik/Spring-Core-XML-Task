@@ -24,12 +24,16 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //Using XmlBeanFactory
+
         BeanFactory factory = new XmlBeanFactory(new ClassPathResource("bean.xml"));
         Movie movie1 = factory.getBean("movie1", Movie.class);
         Movie movie2 = factory.getBean("movie2", Movie.class);
         System.out.println("-------Bean Factory------");
         System.out.println(movie1);
         System.out.println(movie2);
+
+        //Using BeanDefinitionRegistry
 
         BeanDefinitionRegistry registry = new XmlBeanFactory(new ClassPathResource("bean.xml"));
         XmlBeanDefinitionReader rdr = new XmlBeanDefinitionReader(registry);
@@ -38,6 +42,8 @@ public class Main {
         Movie mov2 = ((XmlBeanFactory)factory).getBean("movie2", Movie.class);
         System.out.println(mov1);
         System.out.println(mov2);
+
+        //Using ApplicationContext
 
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("bean.xml");
         Movie movie11 = applicationContext.getBean("movie1", Movie.class);

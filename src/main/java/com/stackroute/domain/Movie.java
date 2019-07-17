@@ -4,6 +4,8 @@ public class Movie {
 
     Actor actor;
 
+    // Declare setter
+
     public void setActor(Actor actor) {
         this.actor = actor;
     }
