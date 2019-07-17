@@ -7,6 +7,8 @@ import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
+//Movie class implementing ApplicationContextAware, BeanFactoryAware & BeanNameAware 
+
 public class Movie implements ApplicationContextAware, BeanFactoryAware, BeanNameAware {
 
    private Actor actor1, actor2;
