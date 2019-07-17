@@ -7,11 +7,13 @@ public class Movie {
     public Movie() {
     }
 
+    //Movie constructor for initializing
     public Movie(Actor actor, Actor actor1) {
         this.actor = actor;
         this.actor1 = actor1;
     }
 
+    //Setters
     public void setActor(Actor actor) {
         this.actor = actor;
     }
