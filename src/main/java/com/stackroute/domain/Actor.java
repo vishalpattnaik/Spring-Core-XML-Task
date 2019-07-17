@@ -6,6 +6,7 @@ public class Actor {
     String gender;
     int age;
 
+    //Actor constructor for initializing
     public Actor(String name, String gender, int age) {
         this.name = name;
         this.gender = gender;
