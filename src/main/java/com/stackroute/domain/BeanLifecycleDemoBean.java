@@ -5,6 +5,8 @@ import org.springframework.beans.factory.InitializingBean;
 
 import java.sql.SQLOutput;
 
+//BeanLifecycleDemoBean implementing InitializingBean & DisposableBean
+
 public class BeanLifecycleDemoBean implements InitializingBean, DisposableBean {
 
    private String message;
