@@ -16,21 +16,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-//        BeanFactory factory = new XmlBeanFactory(new ClassPathResource("bean.xml"));
-//        Movie movie1 = factory.getBean("movie1", Movie.class);
-//        Movie movie2 = factory.getBean("movie2", Movie.class);
-//        System.out.println("-------Bean Factory------");
-//        System.out.println(movie1.getActor());
-//        System.out.println(movie2.getActor());
-//
-//        BeanDefinitionRegistry registry = new XmlBeanFactory(new ClassPathResource("bean.xml"));
-//        XmlBeanDefinitionReader rdr = new XmlBeanDefinitionReader(registry);
-//        System.out.println("\n\n-------Bean Definition Registry------");
-//        Movie mov1 = ((XmlBeanFactory)factory).getBean("movie1", Movie.class);
-//        Movie mov2 = ((XmlBeanFactory)factory).getBean("movie2", Movie.class);
-//        System.out.println(mov1.getActor());
-//        System.out.println(mov2.getActor());
 
+        //applicationcontext used to retrieve actor details
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("bean.xml");
         Movie movie11 = applicationContext.getBean("movie1", Movie.class);
         System.out.println("\n\n-------Application Context------");
