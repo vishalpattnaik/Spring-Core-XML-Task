@@ -4,6 +4,7 @@ public class Movie {
 
     Actor actor, actor1;
 
+    //Movie constructor
     public Movie(Actor actor, Actor actor1) {
         this.actor = actor;
         this.actor1 = actor1;
